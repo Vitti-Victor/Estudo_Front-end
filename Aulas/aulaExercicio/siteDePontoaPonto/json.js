@@ -31,6 +31,7 @@ function conferir() {
       }
 
       res.innerHTML += `\u{1F595}`;
+      
     }
   }
 }
