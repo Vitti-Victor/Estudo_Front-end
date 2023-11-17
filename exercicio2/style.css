@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    margin: 10px auto 10px auto;
+    width: 150px;
+    text-align: center;
+    color: white;
+}
+
+#content{
+    text-align: center;
+}
+
+.conteudo{
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+}
+
+.titulo{
+    text-align: center;
+    margin: 10px 0 15px 0;
+}
+
+.img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+
+
+footer{
+    width: 200px;
+    color: white;
+    margin: 15px auto;
+    text-align: center;
+}

@@ -1,0 +1,157 @@
+window.alert('') --> Cria uma caixa de alerta 
+window.confirm('') --> Cria uma caixa de confirmação
+window.prompt('') --> Cria uma caixa para digitar
+
+typeof --> mostra de qual tipo é a variável
+
+Em js, se usa o sinal de + para dois tipos de situação.
+Uma delas é usada para concatenação(Adicionar outras strings) e a outra é para a soma matemática
+
+para especificar a entrada do valor para que não tenha confusao entre soma e concatenação:
+    *Com NUMEROS*
+number.perseInt() --> Para que os numeros adicionados sejam inteiros
+number.perseFloat() --> Para que os numeros adicionados sejam valores flutuantes
+    *PODE TAMBÉM SÓ USAR number PARA QUE OS NUMEROS SEJAM DE QUALQUER TIPO*
+
+    *Com STRINGS*
+String()
+(o que quiser converter).toString()
+
+Formas de se usar:
+
+var numero1 = number(window.prompt('Digide algum valor:'))
+var numero2 = number(window.prompt('Digide algum valor:'))
+
+var soma = numero1 + numero2
+
+window.alert('A soma deu ' + soma) --> Dessa maneira irá aparecer um alerta de soma(o resultado de numero1 + numero2) como número
+
+var numero1 = number(window.prompt('Digide algum valor:'))
+var numero2 = number(window.prompt('Digide algum valor:'))
+
+var soma = numero1 + numero2
+
+window.alert('A soma deu ' + String(soma)) --> Dessa maneira irá aparecer um alerta de soma(o resultado de numero1 + numero2) como uma string
+
+quando criado várias variáveis com nomes ou numeros, o aconselhável é usar ${(variável que queira exibir)} para melhor prática. Neste caso se deve usar `(crase) antes de começar a escrever e após termiar. Exemplo:
+
+var nome = 'victor'
+var idade = 21
+var nota = 8.5
+
+window.alert(`O aluno ${nome}, de ${idade}, obeteve uma nota de ${nota} em todas as materias de programação`)
+
+
+(variável).length --> retorna o tamanho da string(Quantidade de caracteres)
+(variável).toUpperCase() --> retorna todo o texto 'MAIÚSCULO'
+(variável).toLowerCase() --> Retorna todo o texto 'minúsculo'
+
+document.write() --> Printa na tela o que estiver escrito
+
+como também posso retorna alguma coisa dentro dele:
+
+var nome = window.prompt('Digite seu nome:')
+
+document.write(`Seu nome contém ${nome.length} letras`) --> Retorna a quantidade de letras presente em nome
+
+Da para usar o mesmo modelo de outras maneiras como o .toUpperCase e afins
+
+Para se retornar um numero com mais de uma casa decimal fixo, é usado o .toFixed((quantidade de casas decimais preferida))
+
+n1.toFixed(2) --> irá retornar com duas casas  decimais
+
+Os operadores Aritméticos são os mesmos que se usa na linguagem C, adicionando somento o  operador **(elevado). Por exemplo, em C, teria que chamar a biblioteca <math.h> para poder usar a função pow() para se elevar algum número (pow(5,2)). Neste caso, usamos     5 ** 2 em Java Script
+
+Identidade em js é bem similar a C
+= --> Recebe algum valor
+== --> Será true somente se k valor for igual(podendo ser o mesmo valor de tipo diferente)
+=== --> Dara true somente se forem de mesmo valor e de mesmo tipo 
+
+Exemplo :
+n = 5 --> a variável n recebe 5
+
+5 == '5' true --> 5 é igual a 5 mesmo sendo de tipos diferentes(O Java Script identifica se ele tem o mesmo valor, mas não o tipo)
+5 === '5' false --> Por mais que eles tenham o mesmo valor, eles são de tipos diferente. sendo assim ele identifica se os numeros ou as strings são do mesmo tipo
+5 === 6 false --> por mais que tenham o mesmo tipo, o js identifica como valores diferentes
+
+Pode-se usar também o sinal de diferença para ambos os casos:
+!=
+!==
+!===
+
+operadores lógicos
+
+! --> negação ((! true) um operador não verdadeiro será false e vice versa  )
+&& --> conjunção ((n1 == 5 && n2 == 10) ele só aceita se preencher os dois quesitos)
+|| --> disjunção ((n1 == 5 || n1 == n2) ele aceita qualquer um dos casos preenchidos)
+
+operador Ternário:
+
+teste ? true :  false
+
+media = 5
+
+media >= 7 ? "Aprovado": Reprovado --> Neste caso irá ne retornar Reprovado(false)
+minha média é maior ou igual a 7 ? Se for, "Aprovado": Se não for "Reprovado"
+
+window.document.getElementById('') faz com que o Java Script identifique o ID de alguma div ou algum outro para modificar diante aquela representação:
+window.document.querrySelector('')
+<div id ="area" onclick = "clicar()">
+
+<script>
+    function clicar(){
+        var a = window.document.getElementById('area')
+        a.innerText = 'Clicou'
+    }
+
+    onclick = "clicar()" --> Criou uma função para modificar em js quando clicar com o mouse
+    onmousedown="manteve()" --> Cria uma função para modificar em js quando precionar o objeto com o mouse
+    onmouseenter="entrou()" --> Cria uma função para modificar em js quando entrar com o mouse dentro do objeto
+    onmouseout="sair()" --> Cria uma função para modificar em js quando sai com o mouse do objeto
+    onmouseleave="porcima()" --> Cria uma função para modificar em js quando deixa o objeto
+    onload="carregar" --> Todas as vezes que carregar a página ela atualiza 
+Isso tudo é feito dentro da div, mas também pode ser feito de outro modo dentro do js atravez do addEventListener('click', clicar)
+
+<div id ="area" >
+
+<script>
+    var a = window.document.getElementById('area')
+    a.addEventListener('click',clicar)
+
+    function clicar(){
+        a.innerText = 'Clicou'
+    }
+
+    Normalmente usado para não ficar tão poluido
+
+Para puxar as horas do sistema, basta fazer:
+
+    var hora = new Data()    
+    var agora = hora.getHours()
+    console.log(`Agora são ${agora} horas`)
+
+Em Html, é recomendável usar as seguintes tags:
+
+    header: para fazer o titulo da página
+    nav: para barra de navegação
+    section: para criar seções no site (onde serão adiconados os conteúdos da página)
+    footer: para criar um rodapé com o auxilo do &copy para criar a marca de direitos reservados;
+
+Podemos manipualar cores, textos e imagens dentro do js usado o nome da class ou id para identificar, exemplo, se no html a tag <img> estiver contendo uma class:"imagem", ficará da seguinte forma em JavaScript:
+
+    var im = document.querrySelector('img.imagem')
+
+    im.src = 'fotomanha.jpg' --> irá modificar a imagem de acordo com as especificações
+    document.body.style.background: 'black'
+
+Também pode incerir uma imagem de forma dinamica, direto pelo js:
+
+    var img = document.createElement('img')
+    img.setAttribut('class', 'foto')
+
+    if(){
+        img.setAttribut('src', 'foto.img') --> Para adicionar a imagem desejada
+    }
+
+    res.appendChild(img) --> Para aplicar as imagens (Só ira funcionar se colocar a função appendChild())
+    

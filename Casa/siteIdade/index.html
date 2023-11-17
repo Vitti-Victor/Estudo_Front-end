@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Idade</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculo Idade</h1>
+    </header>
+    <section>
+        <div id="content">
+            <div class="caixa">
+                <div class="ano_nasc">
+                    <p class="ano">Digite o ano de nascimento:
+                        <input type="number" name="nasc" class="nasc" min="1">
+                    </p>
+
+                    <p class="sexo">Selecione o sexo:
+                        <input type="radio" name="radsex" class="masc">
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="radsex" class="femi">
+                        <label for="femi">Feminino</label>
+                    </p>
+                    <div class="botao">
+                        <input type="button" value="Conferir" class="button" onclick="conferir()">
+                    </div>
+
+                    <div class="resposta">
+                        <p class="resp"></p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;VictorHugoVittiRosário</p>
+    </footer>
+
+
+    <script src="json.js"></script>
+</body>
+
+</html>

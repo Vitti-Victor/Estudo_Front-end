@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title>
+</head>
+
+<body>
+
+    <div id="Somar">
+        <div class="Soma_input">
+            <div class="titulo">
+                <h1 class="soma">Soma dos Valores</h1>
+            </div>
+            <div class="soma_acao">
+                <input type="number" name="txtn1" class="txtn1"> +
+                <input type="number" name="txtn2" class="txtn2">
+                <input type="button" value="Somar" onclick="somar()">
+                <div class="soma_resultado">
+                    <p>Resultado: <strong class="resultado_aqui"></strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="subtracao">
+            <div class="sub_titulo">
+                <h1 class="sub">subtração dos Valores</h1>
+            </div>
+            <div class="sub_acao">
+                <input type="number" name="nun1" class="nun1"> -
+                <input type="number" name="nun2" class="nun2">
+                <input type="button" value="subtrair" onclick="subtrair()">
+                <div class="sub_result">
+                    <p>Resultado: <strong class="sub_aqui"></strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="recebe_dados">
+            <div class="nome_titulo">
+                <h1 class="nome">Dados do seu nome</h1>
+            </div>
+            <div class="dados-info">
+                <input type="text" name="nome" class="nome">
+                <input type="button" value="conferir" onclick="confere()">
+                <div class="result">
+                    <p class="dados_result">Resultado: </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="dados">
+            <div class="titulo_nome">
+                <h1 class="nome">Dados Origem</h1>
+            </div>
+            <div class="info_dados">
+                <input type="text" name="origem" class="origem">
+                <input type="button" value="resultado" onclick="teste()">
+                <div>
+                    <p>Resposta: <strong class="res"></strong></p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.querySelector('input.txtn1')
+            var tn2 = window.document.querySelector('input.txtn2')
+            var result = window.document.querySelector('strong.resultado_aqui')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            result.innerHTML = `A Soma de ${n1} mais ${n2} é igual a ${s} `
+        }
+
+        function subtrair() {
+            var tn1 = window.document.querySelector('input.nun1')
+            var tn2 = window.document.querySelector('input.nun2')
+            var result = window.document.querySelector('strong.sub_aqui')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var sub = n1 - n2
+            result.innerHTML = `A subtração de ${n1} menos ${n2} é igual a ${sub}`
+
+        }
+
+        function confere() {
+            var nom = window.document.querySelector('input.nome')
+            var result = window.document.querySelector('p.dados_result')
+            var nome = String(nom.value)
+            result.innerHTML = `O nome digitado foi  <strong>${nome}<\strong>`
+        }
+
+        function teste(){
+            var dado = document.querySelector('input.origem')
+            var res = document.querySelector('strong.res')
+            var orig = String(dado.value)
+            if(orig == 'Brasil'){
+                res.innerHTML = `Você tem que mudar de país. Origem: ${orig}`
+            }else{
+                res.innerHTML = `Gringo sortudo. Origem: ${orig}`
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

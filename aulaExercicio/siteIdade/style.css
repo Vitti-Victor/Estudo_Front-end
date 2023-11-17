@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #004cff;
+}
+
+header{
+    width: 310px;
+    margin: 25px auto;
+    color: white;
+}
+
+#content{
+    text-align: center;
+}
+
+.caixa{
+    width: 550px;
+    margin: 15px auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+p .idade{
+    margin-bottom: 15px ;
+    width: 100px;
+}
+
+p .mas{
+    margin: 0 0 15px 5px;
+}
+
+.foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.verificar{
+    border: transparent;
+    background-color: #004cff;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 15px;
+}

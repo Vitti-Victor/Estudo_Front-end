@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ponto a Ponto</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Ponto a Ponto</h1>
+    </header>
+    <section>
+        <div id="content">
+            <div class="caixa">
+                <div class="ponto">
+                    <p class="ini">Início: <input type="number" name="inicio" class="inicio"></p>
+                    <p class="ini">Fim: <input type="number" name="fim" class="fim"></p>
+                    <p class="ini">Passo: <input type="number" name="passo" class="passo"></p>
+                    <input type="button" value="Conferir" class="conferir" onclick="conferir()">
+                    <div class="resultado">
+                        <p class="res">Preparando...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="json.js"></script>
+</body>
+</html>
