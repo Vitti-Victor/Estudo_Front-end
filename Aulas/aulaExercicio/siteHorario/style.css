@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    color: white;
+}
+
+.title{
+    text-align: center;
+    width: 180px;
+    margin: 15px auto;
+}
+
+#content{
+    width: 100%;
+}
+
+.pagina{
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    color: black;
+}
+
+.img{
+    margin-top: 15px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.dia{
+    margin-top: 15px;
+}
+
+footer{
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+}
