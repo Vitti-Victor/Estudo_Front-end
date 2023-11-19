@@ -150,8 +150,22 @@ Também pode incerir uma imagem de forma dinamica, direto pelo js:
     img.setAttribut('class', 'foto')
 
     if(){
-        img.setAttribut('src', 'foto.img') --> Para adicionar a imagem desejada
+        img.setAttribut('src', 'foto.img') --> Para adicionar o nome da imagem desejada
     }
 
     res.appendChild(img) --> Para aplicar as imagens (Só ira funcionar se colocar a função appendChild())
     
+Para adiconar um texto dentro de um <select>
+
+    var res = document.querrySelector('select.res')
+    
+    res.innerHTML = ``
+    
+
+    *-- Loop ou código desejado --*
+    var item = document.createElement('option')
+    
+    item.innerText = ``
+
+    item.appendChild(item)
+
